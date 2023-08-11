@@ -25,7 +25,7 @@ jobs:
         Invoke-PS2EXE -InputFile winenv.ps1 -OutputFile winenv.exe
 
     - uses: "marvinpinto/action-automatic-releases@latest"
-        with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          prerelease: false
-          files: winenv.exe
+      with:
+        repo_token: "${{ secrets.GITHUB_TOKEN }}"
+        prerelease: false
+        files: winenv.exe
