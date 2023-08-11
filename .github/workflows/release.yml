@@ -22,8 +22,7 @@ jobs:
     - name: Compile .ps1 to .exe
       shell: pwsh
       run: |
-        Import-Module ps2exe
-        Compile-PS2EXE -InputFile winenv.ps1 -OutputFile winenv.exe
+        Invoke-PS2EXE -InputFile winenv.ps1 -OutputFile winenv.exe
 
     - name: Create Release
       id: create_release
