@@ -37,7 +37,7 @@ jobs:
         tag_name: ${{ steps.get_short_sha.outputs.sha }}
         release_name: Release ${{ steps.get_short_sha.outputs.sha }}
         body: |
-          Compile project
+          Compiled project
         draft: false
         prerelease: false
 
